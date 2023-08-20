@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation website using js</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/92d73c3f26.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid main p-0 m-0">
+        <div class="d-flex justify-content-between align-items-center navbar-container p-3 position-sticky top-0">
+            <div class="branding d-flex justify-content-start text-light align-items-center">
+              <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span class="rs">RS</span>&nbsp;naturals</h1>
+              <!-- <img src="images/icon-logo.png" alt="" class="brand-icon"> -->
+            </div>
+                <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <div class="menu">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                        <div class="third"></div>
+                    </div>
+                  </button>
+                  
+                  <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
+                      <button type="button" class="btn close d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <div class="menu1 d-flex justify-content-center align-items-center">
+                          <div class="xmark1"></div>
+                          <div class="xmark2"></div>
+                      </div>
+                      </button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="#">MENU</a></li>
+                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="#">WHY CHOOSE US?</a></li>
+                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="#">OUR PRODUCTS</a></li>
+                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="#">ABOUT US</a></li>
+                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="#">LOGIN</a></li>
+                    </div>
+                  </div>
+                 
+             </div>
+    </div>
+    <div class="second-main">
+        <h1 class="text fw-5 write"></h1>
+    </div>
+    <div class="our-products my-3">
+        <h1 class="text bg-transparent text-center">Our Products</h1>
+    </div>
+    <div class="container-fluid pt-5 cards">
+        <div class="row d-flex justify-content-evenly">
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mt-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mt-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card my-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+</body>
+</html>
