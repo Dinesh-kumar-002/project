@@ -12,7 +12,7 @@ function scrollFunction() {
   if ( document.documentElement.scrollTop > 150) {
     win.style.backgroundColor="black"
 } else {
-    win.style.backgroundColor="rgb(21, 21, 21)"
+    win.style.backgroundColor="black"
 }
 }
 //menu bar 
