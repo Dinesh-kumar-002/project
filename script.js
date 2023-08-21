@@ -52,5 +52,7 @@ close.addEventListener('click', ()=>{
 
 window.addEventListener('load',()=>{
     let preloader=document.querySelector('.preloader');
+    let body=document.querySelector('body');
     preloader.style.zIndex='0';
+    body.style.overflow='visible';
 })

@@ -216,7 +216,9 @@ body{
 }
 
 /* preloader */
-
+body{
+    overflow: hidden;
+}
 .preloader{
     z-index: 30;
     position: absolute;
@@ -227,6 +229,7 @@ body{
     width: 100%;
     /* display: none; */
     pointer-events: none;
+    overflow: hidden;
 
 }
 .loader {
