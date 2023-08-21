@@ -32,6 +32,9 @@ body{
     font-family: 'Barriecito', cursive;
     
 }
+.list-items a{
+    padding: 5px;
+}
 .list-items{
     margin: 25px 0;
     list-style: none;
@@ -61,6 +64,7 @@ body{
 .list-items:hover{
     color: rgb(0, 148, 44);
     transform: translateX(5px);
+    background-color: rgba(128, 128, 128, 0.116);
 }
 .rs{
     color: rgb(9, 244, 0);
@@ -101,8 +105,9 @@ body{
 }
 .offcanvas-body{
     z-index: 10;
-    font-family: 'Kalam';
+    font-family: 'Barriecito', cursive;
     font-weight: bold;
+    font-size: 23px;
 }
 .close{
     border: 0 !important;

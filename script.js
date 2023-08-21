@@ -1,16 +1,3 @@
-AOS.init();
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf);
 var typing=new Typed(".write", {
     strings: ["", " \"RS Naturals Spices: Where Purity, Aroma, and Taste Converge for Unforgettable Meals\"", "\"Flavoring Life's Adventures: RS Naturals - Your Partner in Pure and Authentic Spices\""," \"RS Naturals Spices: Where Purity, Aroma, and Taste Converge for Unforgettable Meals\""," \"Savor the Genuine Taste of Nature: RS Naturals - Crafting Remarkable Spice Blends\""],
     typeSpeed: 100,
@@ -44,3 +31,4 @@ close.addEventListener('click', ()=>{
         child.classList.remove("actived");
     })
 })
+
