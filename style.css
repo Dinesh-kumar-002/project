@@ -1,8 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Kalam:wght@300;400&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat&family=Kalam:wght@300;400&family=Nunito:wght@200;300;400;500;600;700;800&family=Tilt+Prism&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+.btn{
+    border: 0;
+    font-weight: 700;
+}
+.text-cumin{
+    color: rgb(204,153,91);
+}
+.text-garam{
+    color: rgb(171, 112, 41);
+}
+.btn-garam{
+    background-color: rgb(171, 112, 41);
+}
+.btn-cumin{
+    background-color: rgb(204,153,91);
 }
 .main{
     background-color: black;
@@ -16,7 +36,7 @@
     margin: 25px 0;
     list-style: none;
     transform: translateX(-100px);
-    transition: transform 500ms ease-in;
+    transition: transform 300ms ease-in-out;
 }
 .actived:nth-child(1){
     transition-delay: 100ms;
@@ -63,7 +83,8 @@
     height: 60%;
 }
 .offcanvas-header{
-    background-color: rgb(40, 40, 40);
+    background-color: black;
+    box-shadow: 0 3px 5px black;
     color: rgb(255, 255, 255);
     font-family: 'Tilt Prism', cursive !important;
 }
@@ -173,16 +194,16 @@
 
 .card{ 
     border: 0;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgb(43, 43, 43);
     transition: color 2s;
+    color: white;
 }
 .card img{
     width: 100%;
 }
-.card:hover{
-    background-color: black;
-    color: white;
-}
 .card-img-top{
     z-index: 10;
+}
+.text2{
+    font-family: 'Barriecito', cursive !important;;
 }

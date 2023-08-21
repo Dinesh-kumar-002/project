@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="preloader">
+    <div class="inner">
+
+    </div>
+  </div>
     <div class="container-fluid main p-0 m-0">
         <div class="d-flex justify-content-between align-items-center navbar-container p-3 position-sticky top-0">
             <div class="branding d-flex justify-content-start text-light align-items-center">
@@ -52,38 +57,74 @@
         <h1 class="text fw-5 write"></h1>
     </div>
     <div class="our-products my-3">
-        <h1 class="text bg-transparent text-center">Our Products</h1>
+        <h1 class="text2 bg-transparent text-center">Our Products</h1>
     </div>
     <div class="container-fluid pt-5 cards">
         <div class="row d-flex justify-content-evenly">
           
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mt-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
-              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="...">
+          <div class="col-6 col-lg-4">
+            <div class="card mt-3" data-aos="fade-up" >
+              <img src="images/cumin.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h6 class="card-title text-cumin">CUMIN POWDER</h6>
+                <p class="card-text">Rs.50/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-cumin">BUY</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mt-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
-              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="..." >
+          <div class="col-6 col-lg-4">
+            <div class="card mt-3" data-aos="fade-up">
+              <img src="images/chilli.png" class="card-img-top" alt="..." >
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h6 class="card-title text-danger">CHILLI POWDER</h6>
+                <p class="card-text">Rs.80/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-danger">BUY</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card my-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
-              <img src="images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg" class="card-img-top" alt="...">
+          <div class="col-6 col-lg-4">
+            <div class="card mt-3" data-aos="fade-up">
+              <img src="images/garam.png" class="card-img-top" alt="..." >
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h6 class="card-title text-garam">GARAM MASALA</h6>
+                <p class="card-text">Rs.80/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-garam">BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card my-3" data-aos="fade-up">
+              <img src="images/coriander.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title text-success">CORIANDER POWDER</h6>
+                <p class="card-text">Rs.40/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-success">BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card my-3" data-aos="fade-up">
+              <img src="images/onion.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title text-light">ONION POWDER</h6>
+                <p class="card-text">Rs.100/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-light text-dark">BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card my-3" data-aos="fade-up">
+              <img src="images/cheese.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title text-success">CHEESE POWDER</h6>
+                <p class="card-text">Rs.120/-</p>
+                <p class="text-secondary">100gms</p>
+                <a href="#" class="btn btn-success btn-danger">BUY</a>
               </div>
             </div>
           </div>
@@ -95,6 +136,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
     <script>
       AOS.init();
     </script>
