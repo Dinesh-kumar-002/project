@@ -1,18 +1,18 @@
-var typing = new Typed(".write", {
-    strings: ["", " \"RS Naturals Spices: Where Purity, Aroma, and Taste Converge for Unforgettable Meals\"", "\"Flavoring Life's Adventures: RS Naturals - Your Partner in Pure and Authentic Spices\"", " \"RS Naturals Spices: Where Purity, Aroma, and Taste Converge for Unforgettable Meals\"", " \"Savor the Genuine Taste of Nature: RS Naturals - Crafting Remarkable Spice Blends\""],
-    typeSpeed: 100,
-    backSpeed: 10,
-    loop: true,
-    showCursor: false
-});
-
-
+if(document.querySelector('.write')){
+    var typing = new Typed(".write", {
+        strings: [" ",`"\Welcome to <br><span class="rs">RS</span>&nbsp;naturals\"`],
+        typeSpeed: 30,
+        backSpeed: 100,
+        // loop: true,
+        showCursor: false
+    });
+}
 gsap.from('.branding', {
     duration: 3,
     y: '-100px',
     ease: 'elastic'
 })
-gsap.from('.navbar-button', {
+gsap.from('.navbar-button,.fa-user,.fa-opencart', {
     duration: 3,
     y: '-100px',
     ease: 'elastic'
@@ -110,29 +110,16 @@ tl3.fromTo('.why-choose', {
     start: 'top center',
     end: 'bottom center'
 });
-// tl2.fromTo('.card', {
-//     y: '40%',
-//     opacity: '0'
-// }, {
-//     duration: '5',
-//     y: '0%',
-//     opacity: '1',
-//     ease: 'elastic',
-//     start: 'top center',
-//     end: 'bottom center',
-//     ease: 'elastic'
-// })
-
 
 
 
 window.onscroll = function () {
     scrollFunction()
-};
+}
 
 function scrollFunction() {
     var win = document.querySelector('.main');
-    if (document.documentElement.scrollTop > 150) {
+    if (document.documentElement.scrollTop > 5) {
         win.style.backgroundColor = "black"
     } else {
         win.style.backgroundColor = "transparent"
@@ -167,11 +154,4 @@ window.addEventListener('load', () => {
 })
 
 
-
-
-  mySplitText = new SplitText(".para1", { type: "words,chars"})
-  chars = mySplitText.chars;
-
-gsap.set(".para1", { perspective: 400 });
-
-
+//contact us

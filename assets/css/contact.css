@@ -1,0 +1,87 @@
+.second-main{
+    background-image: url("../images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.whole-address{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.address-logo i{
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    padding: 1rem;
+}
+main.container-fluid{
+    padding: 50px 0px;
+    background-image: url("../images/vertical1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.phone,.addresss,.email{
+    width: 100%;
+    background-color: red;
+    margin: 5px 0;
+}
+form{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.103);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 1rem;
+    width: 100%;
+}
+.form button{
+    color: white;
+    border: 0;
+    margin-top: 1rem;
+    padding: 5px 20px ;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 41);
+}
+.form input,textarea{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.form input:focus,textarea:focus{
+    outline: 0;
+}
+.boxes{
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 30px;
+    width: 100%;
+    position: absolute;
+}
+.box1,.box2,.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: rgba(2, 130, 152, 0.139);
+    box-shadow: 0 0 30px black;
+    min-height: 150px;
+    min-width: 250px;
+}
+
+@media screen and (max-width:520px){
+    
+}
