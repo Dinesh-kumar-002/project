@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 85vh;
 }
 .whole-address{
     width: 100%;
@@ -17,7 +17,6 @@
     padding: 1rem;
 }
 main.container-fluid{
-    padding: 50px 0px;
     background-image: url("../images/vertical1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -83,5 +82,7 @@ form{
 }
 
 @media screen and (max-width:520px){
-    
+    .second-main{
+        height: 40vh;
+    }
 }
