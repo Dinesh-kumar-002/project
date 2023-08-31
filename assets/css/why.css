@@ -1,0 +1,14 @@
+.second-main{
+    background-image: none;
+    background-color: black ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 8vh;
+}
+
+/* .delieveryboy{
+    transform: translateX(-400px);
+    transition: transform 2s ease-in-out;
+} */

@@ -20,7 +20,7 @@ gsap.from('.navbar-button,.fa-user,.fa-opencart', {
 
 var tl1 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".our-products",
+        trigger: ".our-products,.text2",
         start: "top 80%",
         end: "bottom 10%",
         toggleActions: "play none none reset",
@@ -88,7 +88,7 @@ tl5.fromTo('.imagepin2', {
     duration: '2'
 });
 
-tl1.fromTo('.our-products', {
+tl1.fromTo('.our-products,.text2', {
     y: '100%',
     opacity: '0'
 }, {
@@ -155,3 +155,18 @@ window.addEventListener('load', () => {
 
 
 //contact us
+
+
+
+//why
+var delieveryboy=document.querySelector('.delieveryboy');
+let options = {
+    root: document.querySelector("#scrollArea"),
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  
+  let observer = new IntersectionObserver(callback, options);
+  function callback(){
+
+  }

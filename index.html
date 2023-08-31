@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,87 +30,93 @@
             class="rs">RS</span>&nbsp;naturals</h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
       </div>
+
+      <!-- nav buttons -->
+
       <div class="right-side">
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample1" aria-controls="offcanvasExample">
-        <i class="fa-solid fa-user" style="color: #ffae00;"></i>
-        </button>
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom">
           <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
         </button>
+
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+          aria-controls="offcanvasRight">
+          <i class="fa-solid fa-user" style="color: #ffae00;"></i>
+        </button>
+
         <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample3" aria-controls="offcanvasExample3">
+          data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
             <div class="second"></div>
             <div class="third"></div>
           </div>
         </button>
+
       </div>
 
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample3"
-        aria-labelledby="offcanvasExampleLabel3">
+      <!-- button contents 1 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0" id="offcanvasRightLabel"><span
               class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
+            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
         </div>
+        
         <div class="offcanvas-body">
-          <li class="list-items "><a class="dropdown-item text-decoration-none active" href="">MENU</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">HOME</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
         </div>
       </div>
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample2"
-        aria-labelledby="offcanvasExampleLabel2">
-        <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">CART</h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
-            <div class="menu1 d-flex justify-content-center align-items-center">
-              <div class="xmark1"></div>
-              <div class="xmark2"></div>
-            </div>
-          </button>
-        </div>
-        <div class="offcanvas-body">
-         hello
-        </div>
-      </div>
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample1"
-        aria-labelledby="offcanvasExampleLabel1">
-        <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">ACCOUNT</h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
-            <div class="menu1 d-flex justify-content-center align-items-center">
-              <div class="xmark1"></div>
-              <div class="xmark2"></div>
-            </div>
-          </button>
-        </div>
-        <div class="offcanvas-body">
-         DINESH KUMAR
-        </div>
-      </div>
       
+      <!-- button contents 2 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">ACCOUNT</h5>
+          <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+         Dinesh kumar
+        </div>
+      </div>
+
+      <!-- button contents 3 -->
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
+          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body small">
+          No products in cart
+        </div>
+      </div>
+
     </div>
   </div>
   <div class="second-main d-flex flex-sm-column">
     <p class="contact-text text position-absolute write"></p>
-    <svg id="sw-js-blob-svg" viewBox="0 0 100 100"
-      xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
           <stop id="stop1" stop-color="rgba(0, 8.55, 128.325, 0.49)" offset="0%"></stop>
@@ -118,8 +125,8 @@
       </defs>
       <path fill="url(#sw-gradient)"
         d="M31,-10.7C34.9,1.8,29.1,16.9,18.1,24.9C7.1,33,-9.1,33.9,-18.1,26.9C-27.2,19.9,-29,4.9,-24.8,-8.1C-20.5,-21.2,-10.3,-32.4,1.7,-32.9C13.6,-33.4,27.2,-23.3,31,-10.7Z"
-        transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 1s;"
-        stroke="url(#sw-gradient)"></path>
+        transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 1s;" stroke="url(#sw-gradient)">
+      </path>
     </svg>
 
   </div>
@@ -261,21 +268,55 @@
           </div>
         </div>
       </div>
-
-
     </div>
+    <main class="whytochooseus">
+      <div class="our-products my-3">
+        <h1 class="text2 text-center text-white p-3">WHY TO CHOOSE US</h1>
+      </div>
+      <!-- <p class="text"></p> -->
+      <div class="row p-0 m-0">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (6).png" alt="">
+            <h2 class="text-light text-uppercase text-center">Pure and Natural</h2>
+            <h5 class="text-light mt-4">"We believe in the power of nature's goodness. Our spices are free from artificial additives, preservatives, and fillers. With RS Naturals, you can savor the pure, unadulterated taste of each spice, enhancing your dishes naturally."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (8).png" alt="">
+            <h2 class="text-light text-uppercase">Wide Variety</h2>
+            <h5 class="text-light mt-4">"We believe in the power of nature's goodness. Our spices are free from artificial additives, preservatives, and fillers. With RS Naturals, you can savor the pure, unadulterated taste of each spice, enhancing your dishes naturally."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/full pack cropped.png" alt="">
+            <h2 class="text-light text-uppercase">Packaged with Care</h2>
+            <h5 class="text-light mt-4">"We understand the importance of preserving the freshness and potency of our spices. Our packaging is designed to seal in the aroma and flavor, ensuring that every time."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (7).png" alt="" class="delieveryboy">
+            <h2 class="text-light pt-2">WHOLE SALE AVAILABLE</h2>
+            <h5 class="text-light mt-4">" we are delighted to offer free delivery as part of our commitment to providing you with a seamless and satisfying shopping experience."</h5>
+          </div>
+        </div>
+      </div>
+    </main>
 
 
     <!-- content -->
-    <div class="animate">
-      <div class="why-choose my-3">
+    <div class="animate py-5">
+      <div class="why-choose">
         <h1 class="text2 text-center text-white p-3">Why Choose Us?</h1>
       </div>
       <div class="row p-0 m-0">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 col-md-6">
           <img src="assets/images/fresh.jpg" alt="" class="w-100 imagepin">
         </div>
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
           <p class="text-center text-light para1 py-5 py-lg-0 m-0">
             "Unlocking Nature's Pantry: RS Naturals - Curating Spices with Love and Authenticity"
           </p>
@@ -283,12 +324,13 @@
         </div>
       </div>
       <div class="row mt-4 p-0 m-0">
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-sm-1 order-md-2">
+        <div
+          class="col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center order-sm-2 order-lg-1 order-md-2">
           <p class="text-center text-light para2 py-5 py-lg-0 m-0">
             "Cultivating Rich Flavors, Harvesting Pure Joy: RS Naturals - The Essence of Gourmet Spices"
           </p>
         </div>
-        <div class="col-12 col-lg-6 order-1 order-sm-2 order-md-1">
+        <div class="col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2">
           <img src="assets/images/fresh.jpg" alt="" class="w-100 imagepin2">
         </div>
       </div>
@@ -306,7 +348,7 @@
         <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5 justify-content-between">
           <form action="#" class="subscribe-form w-100">
             <div class="form-group d-flex align-items-center justify-content-between">
-              <input type="email" class="form-control rounded-left w-100" placeholder="Enter email address">
+              <input type="email" class=" subscribe form-control rounded-left w-100" placeholder="Enter email address">
               <button type="submit" class="form-control submit p-0 ms-1"><span><i
                     class="fa-solid fa-paper-plane"></i></span></button>
             </div>
@@ -328,14 +370,6 @@
               </ul>
             </div>
             <div class="col-md-4 mb-md-0 mb-4">
-              <h2 class="footer-heading text-light">Download App</h2>
-              <ul class="list-unstyled">
-                <!-- <li><a href="#" class="py-1 d-block"><span class=""></span>Download</a></li> -->
-                <li><a href="#" class="py-1 d-block"><span class=""></span>android</a></li>
-                <li><a href="#" class="py-1 d-block"><span class=""></span>iOS</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-md-0 mb-4">
               <h2 class="footer-heading text-light">features</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-1 d-block"><span class=""></span>free delivery</a></li>
@@ -343,17 +377,34 @@
                 <li><a href="#" class="py-1 d-block"><span class=""></span>Also available in small quantity</a></li>
               </ul>
             </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading text-light">Download App</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block"><span class=""></span>android</a></li>
+                <li><a href="#" class="py-1 d-block"><span class=""></span>iOS</a></li>
+              </ul>
+              <div class="appimage  ">
+                <img src="assets/images/pngegg (3).png" alt="" class="img1">
+                <img src="assets/images/pngegg (5).png" alt="" class="img2">
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-3 col-lg-6 order-md-last">
           <div class="row justify-content-end">
             <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
               <h1 class="text brand text-light align-items-center py-2"><span class="rs">RS</span>&nbsp;naturals</h1>
+              <div class="social-icons d-flex mb-3">
+                <img src="assets/images/facebook.png" alt="">
+                <img src="assets/images/instagram.png" alt="">
+                <img src="assets/images/whatsapp (1).png" alt="">
+                <img src="assets/images/twitter.png" alt="" class="twitter">
+                <img src="assets/images/youtube.png" alt="">
+              </div>
               <p class="copyright text-light">
                 Copyright &copy;<script>
                   document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="ion-ios-heart"
-                  aria-hidden="true"></i> by <a href="" target="_blank">rsnaturals@spices.com</a>
+                </script> All rights reserved by <a href="" target="_blank">rsnaturals@spices.com</a>
               </p>
             </div>
           </div>
@@ -367,6 +418,11 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
   <script>
+    var whytobox=document.querySelectorAll(".whytobox");
+      whytobox.forEach((value) => {
+        value.setAttribute("data-aos","zoom-in-bottom")
+        value.setAttribute("data-aos-duration","1500")
+      })
     AOS.init();
   </script>
 </body>

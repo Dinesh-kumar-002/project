@@ -6,16 +6,25 @@
     background-attachment: fixed;
     height: 85vh;
 }
+
 .whole-address{
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
+    height: 100%;
+}
+.address p a{
+    color: white;
 }
 .address-logo i{
-    background-color: rgba(255, 255, 255, 0.08);
+    
+    background-color: rgba(255, 255, 255, 0.196);
     border-radius: 50%;
     padding: 1rem;
+    margin-right: 10px;
 }
+
 main.container-fluid{
     background-image: url("../images/vertical1.jpg");
     background-position: center;
@@ -25,8 +34,9 @@ main.container-fluid{
 }
 .phone,.addresss,.email{
     width: 100%;
-    background-color: red;
     margin: 5px 0;
+    letter-spacing: 3px;
+    /* font-size: 33px; */
 }
 form{
     height: 100%;
@@ -70,6 +80,7 @@ form{
     position: absolute;
 }
 .box1,.box2,.box3{
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,8 +88,20 @@ form{
     white-space: nowrap;
     background-color: rgba(2, 130, 152, 0.139);
     box-shadow: 0 0 30px black;
-    min-height: 150px;
+    min-height: 200px;
     min-width: 250px;
+    padding: 15px 0;
+}
+.whole-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(2, 130, 152, 0.139); */
+    /* box-shadow: 0 0 30px black; */
+    min-height: 150px;
+    padding: 10px;
+    min-width: 150px;
 }
 
 @media screen and (max-width:520px){

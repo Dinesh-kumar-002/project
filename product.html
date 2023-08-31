@@ -29,50 +29,62 @@
             class="rs">RS</span>&nbsp;naturals</h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
       </div>
+
+      <!-- nav buttons -->
+
       <div class="right-side">
-        <!-- <i class="fa-solid fa-user" style="color: #ffae00;"></i> -->
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom">
           <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
         </button>
+        
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+          aria-controls="offcanvasRight">
+          <i class="fa-solid fa-user" style="color: #ffae00;"></i>
+        </button>
+
         <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
             <div class="second"></div>
             <div class="third"></div>
           </div>
         </button>
+
       </div>
 
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
+      <!-- button contents 1 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
+          <h5 id="offcanvasRightLabel">
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
               class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
+            </h5>
+            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
         </div>
+        
         <div class="offcanvas-body">
-          <li class="list-items "><a class="dropdown-item text-decoration-none active" href="">MENU</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none " href="index.html">HOME</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
-          <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">OUR PRODUCTS</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
         </div>
       </div>
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample2"
-        aria-labelledby="offcanvasExampleLabel2">
+      
+      <!-- button contents 2 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">cart</span></h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
+          <h5 id="offcanvasRightLabel">ACCOUNT</h5>
+          <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
@@ -80,7 +92,24 @@
           </button>
         </div>
         <div class="offcanvas-body">
-          
+         Dinesh kumar
+        </div>
+      </div>
+
+      <!-- button contents 3 -->
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
+          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body small">
+          No products in cart
         </div>
       </div>
 
@@ -89,6 +118,19 @@
     <div class="second-main">
       <p class="contact-text text position-absolute">OUR PRODUCTS</p>
     </div>
+    <div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Action
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+  
     <footer class="footer">
 			<div class="container-fluid">
 				<div class="row align-items-center align-items-stretch mb-5">

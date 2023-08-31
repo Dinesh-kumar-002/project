@@ -31,50 +31,62 @@
             class="rs">RS</span>&nbsp;naturals</h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
       </div>
+
+      <!-- nav buttons -->
+
       <div class="right-side">
-        <!-- <i class="fa-solid fa-user" style="color: #ffae00;"></i> -->
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom">
           <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
         </button>
+        
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+          aria-controls="offcanvasRight">
+          <i class="fa-solid fa-user" style="color: #ffae00;"></i>
+        </button>
+
         <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
             <div class="second"></div>
             <div class="third"></div>
           </div>
         </button>
+
       </div>
 
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
+      <!-- button contents 1 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
+          <h5 id="offcanvasRightLabel">
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
               class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
+            </h5>
+            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
         </div>
+        
         <div class="offcanvas-body">
-          <li class="list-items "><a class="dropdown-item text-decoration-none active" href="">MENU</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none" href="index.html">HOME</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
-          <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">CONTACT</a></li>
         </div>
       </div>
-      <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample2"
-        aria-labelledby="offcanvasExampleLabel2">
+      
+      <!-- button contents 2 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">cart</span></h3>
-          <button type="button" class="btn close d-flex justify-content-center align-items-center"
-            data-bs-dismiss="offcanvas" aria-label="Close">
+          <h5 id="offcanvasRightLabel">ACCOUNT</h5>
+          <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
@@ -82,7 +94,24 @@
           </button>
         </div>
         <div class="offcanvas-body">
-          
+         Dinesh kumar
+        </div>
+      </div>
+
+      <!-- button contents 3 -->
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
+          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body small">
+          No products in cart
         </div>
       </div>
 
@@ -94,10 +123,12 @@
       <div class="box1">
         <div class="content">
           <div class="address-logo d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
           </div>
-          <p class="text-center text-light fs-6 m-0">Address</p>
-          <p class="text-center text-light fs-6 m-0"><a href="https://goo.gl/maps/Ridr7uL2F5ekQkrH8">28, Shastri Nagar,<br> Adyar, Chennai,<br>Tamil Nadu 600-020</a></p>
+          <div class="address">
+            <p class="text-center text-primary fs-6 m-0">Address</p>
+            <p class="text-center text-light fs-6 m-0"><a href="https://goo.gl/maps/Ridr7uL2F5ekQkrH8">28, Shastri Nagar,<br> Adyar, Chennai,<br>Tamil Nadu 600-020</a></p>
+          </div>
         </div>
       </div>
       <div class="box2">
@@ -106,7 +137,7 @@
             <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
           </div>
           <div class="address">
-            <p class="text-center text-light fs-6 m-0">Email</p>
+            <p class="text-center text-warning fs-6 m-0">Email</p>
             <p class="text-center text-light fs-6 m-0 ">
               <a href="mailto:rsnaturals@gmail.com">rsnaturals@gmail.com</a>
             </p>
@@ -119,7 +150,7 @@
             <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
           </div>
           <div class="address">
-            <p class="text-center text-light fs-6 m-0">Phone</p>
+            <p class="text-center text-danger fs-6 m-0">Phone</p>
             <p class="text-center text-light fs-6 m-0 "><a href="Tel:044-3454-3453">044-3454 3453</a></p>
           </div>
         </div>
@@ -138,42 +169,42 @@
       </div>
       <div class="col-12 col-lg-6 p-0 d-flex flex-column align-items-center justify-content-between  d-block d-lg-none">
         <div class="addresss mt-5">
-          <div class="whole-address d-flex">
+          <div class="whole-address">
             <div class="address-logo d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
             </div>
             <div class="address">
               <!-- <p class="text-center text-light fs-6 m-0">Address</p> -->
-              <p class="text-center text-light fs-6 m-0">32,sugar camp Road,<br>owantonia,minnerads,<br>600 077.</p>
+              <p class="text-center text-light fs-6 m-0"><a href="https://goo.gl/maps/Ridr7uL2F5ekQkrH8" class="text-light text-decoration-none">28, Shastri Nagar,<br> Adyar, Chennai,<br>Tamil Nadu 600-020</a></p>
             </div>
           </div>
         </div>
         <div class="phone">
-          <div class="whole-address d-flex">
+          <div class="whole-address">
             <div class="address-logo d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
             </div>
             <div class="address">
               <!-- <p class="text-center text-light fs-6 m-0">Phone</p> -->
-              <p class="text-center text-light fs-6 m-0 ">044-3454 3453</p>
+              <p class="text-center text-light fs-6 m-0 "><a href="Tel:044-3454 3453" class="text-light text-decoration-none">044-3454 3453</a></p>
             </div>
           </div>
         </div>
         <div class="email">
-          <div class="whole-address d-flex">
+          <div class="whole-address">
             <div class="address-logo d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
             </div>
             <div class="address">
               <!-- <p class="text-center text-light fs-6 m-0">Email</p> -->
-              <p class="text-center text-light fs-6 m-0"><a href="mailto:rsnaturals@gamail.com">rsnaturals@gamail.com</a></p>
+              <p class="text-center text-light fs-6 m-0"><a href="mailto:rsnaturals@gmail.com" class="text-light text-decoration-none">rsnaturals@gamail.com</a></p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-        <form action="#" class=" w-md-75">
+        <form action="#" class=" w-md-75 pb-5 pb-lg-0">
           <div class="form mg-lg-0 h-100 mt-5 mt-lg-0">
             <h4 class="text-light">send message</h4>
             <input type="text" placeholder="Full Name" id="name"> 
@@ -198,7 +229,7 @@
         <div class="col-md-6 py-4 py-md-5 d-flex align-items-center pl-md-5 justify-content-between">
           <form action="#" class="subscribe-form w-100">
             <div class="form-group d-flex align-items-center justify-content-between">
-              <input type="email" class="form-control w-100" placeholder="Enter email address">
+              <input type="email" class="form-control w-100" placeholder="Enter your mail id">
               <button type="submit" class="form-control submit p-0 ms-1"><span><i
                     class="fa-solid fa-paper-plane"></i></span></button>
             </div>
@@ -241,10 +272,17 @@
           <div class="row justify-content-end">
             <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
               <h1 class="text brand text-light align-items-center py-2"><span class="rs">RS</span>&nbsp;naturals</h1>
-              <p class="copyright text-light">
+              <div class="social-icons d-flex">
+                <img src="assets/images/facebook.png" alt="">
+                <img src="assets/images/instagram.png" alt="">
+                <img src="assets/images/whatsapp (1).png" alt="">
+                <img src="assets/images/twitter.png" alt="" class="twitter">
+                <img src="assets/images/youtube.png" alt="">
+              </div>
+              <p class="copyright text-light mt-3">
                 Copyright &copy;<script>
                   document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="ion-ios-heart"
+                </script>&nbsp;|&nbsp;All rights reserved<i class="ion-ios-heart"
                   aria-hidden="true"></i> by <a href="" target="_blank">rsnaturals@spices.com</a>
               </p>
             </div>

@@ -22,52 +22,160 @@
     </div>
     <div class="please text-white">please wait...</div>
   </div>
-    <div class="container-fluid main p-0 m-0">
-        <div class="d-flex justify-content-between align-items-center navbar-container p-3">
-            <div class="branding d-flex justify-content-start text-light align-items-center">
-              <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span class="rs">RS</span>&nbsp;naturals</h1>
-              <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
+  <div class="container-fluid main p-0">
+    <div class="d-flex justify-content-between align-items-center navbar-container p-3">
+      <div class="branding d-flex justify-content-start text-light align-items-center">
+        <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
+            class="rs">RS</span>&nbsp;naturals</h1>
+        <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
+      </div>
+
+      <!-- nav buttons -->
+
+      <div class="right-side">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom">
+          <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
+        </button>
+        
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+          aria-controls="offcanvasRight">
+          <i class="fa-solid fa-user" style="color: #ffae00;"></i>
+        </button>
+
+        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
+          <div class="menu">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- button contents 1 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
+              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
+            </h5>
+            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
             </div>
-                <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <div class="menu">
-                        <div class="first"></div>
-                        <div class="second"></div>
-                        <div class="third"></div>
-                    </div>
-                  </button>
-                  
-                  <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                      <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-                      <button type="button" class="btn close d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <div class="menu1 d-flex justify-content-center align-items-center">
-                          <div class="xmark1"></div>
-                          <div class="xmark2"></div>
-                      </div>
-                      </button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="index.html">MENU</a></li>
-                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="">WHY CHOOSE US?</a></li>
-                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
-                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
-                      <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
-                    </div>
-                  </div>
-                 
-             </div>
+          </button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <li class="list-items"><a class="dropdown-item text-decoration-none " href="index.html">HOME</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">WHY CHOOSE US?</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
+        </div>
+      </div>
+      
+      <!-- button contents 2 -->
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">ACCOUNT</h5>
+          <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+         Dinesh kumar
+        </div>
+      </div>
+
+      <!-- button contents 3 -->
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
+          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="menu1 d-flex justify-content-center align-items-center">
+              <div class="xmark1"></div>
+              <div class="xmark2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body small">
+          No products in cart
+        </div>
+      </div>
+
     </div>
+  </div>
     <div class="second-main">
-        <h1 class="text fw-5 write"></h1>
+
     </div>
-    <div class="container-fluid cards">
+    <div class="container-fluid cards p-0 m-0">
     
     
     <!-- content -->
-    <div class="animate">
+    <div class="animate py-5">
+      <div class="whole-whybanner">
+        <div class="row p-0 m-0">
+          <div class="col-12 col-md-6 col-lg-6 ">
+            <div class="bannerimage">
+              <img src="assets/images/why/swisspac-mockup.png" alt="" class="w-100 bannerimage2 position-relative">
+              <img src="assets/images/why/5-2-special-offer-png-pic.png" alt="" class="bannerimage1">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="bannercontent">
+                <h4 class="text-white p-4 ">
+                  we recognize that when you're eagerly awaiting the perfect spices to elevate your culinary creations, time is of the essence. That's why we are dedicated to providing you with swift and efficient delivery services that bring the world of flavors right to your doorstep. 
+                </h4>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="why-choose my-3">
-        <h1 class="text2 bg-dark text-center text-white p-3">Why Choose Us?</h1>
+        <h1 class="text2 bg-dark text-center text-white p-3">We provide</h1>
     </div>
+    <main class="whytochooseus">
+      <div class="row p-0 m-0">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (6).png" alt="">
+            <h2 class="text-light text-uppercase text-center">Pure and Natural</h2>
+            <h5 class="text-light mt-4">"We believe in the power of nature's goodness. Our spices are free from artificial additives, preservatives, and fillers. With RS Naturals, you can savor the pure, unadulterated taste of each spice, enhancing your dishes naturally."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (8).png" alt="">
+            <h2 class="text-light text-uppercase">Wide Variety</h2>
+            <h5 class="text-light mt-4">"We believe in the power of nature's goodness. Our spices are free from artificial additives, preservatives, and fillers. With RS Naturals, you can savor the pure, unadulterated taste of each spice, enhancing your dishes naturally."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/full pack cropped.png" alt="">
+            <h2 class="text-light text-uppercase">Packaged with Care</h2>
+            <h5 class="text-light mt-4">"We understand the importance of preserving the freshness and potency of our spices. Our packaging is designed to seal in the aroma and flavor, ensuring that every time."</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="whytobox">
+            <img src="assets/images/why/pngegg (7).png" alt="" class="delieveryboy">
+            <h2 class="text-light pt-2">WHOLE SALE AVAILABLE</h2>
+            <h5 class="text-light mt-4">" we are delighted to offer free delivery as part of our commitment to providing you with a seamless and satisfying shopping experience."</h5>
+          </div>
+        </div>
+      </div>
+    </main>
+    
       <div class="row p-0 m-0">
         <div class="col-12 col-lg-6">
           <img src="assets/images/fresh.jpg" alt="" class="w-100 imagepin" >
@@ -80,12 +188,12 @@
         </div>
       </div>
       <div class="row mt-4 p-0 m-0">
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-sm-1 order-md-2">
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-sm-2 order-lg-1 ">
           <p class="text-center text-light para2 py-5 py-lg-0 m-0">
             "Cultivating Rich Flavors, Harvesting Pure Joy: RS Naturals - The Essence of Gourmet Spices"
           </p>
         </div>
-        <div class="col-12 col-lg-6 order-1 order-sm-2 order-md-1">
+        <div class="col-12 col-lg-6 order-sm-1 order-lg-2">
           <img src="assets/images/fresh.jpg" alt="" class="w-100 imagepin2">
         </div>
       </div>
@@ -160,6 +268,11 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     
     <script>
+      var whytobox=document.querySelectorAll(".whytobox");
+      whytobox.forEach((value) => {
+        value.setAttribute("data-aos","zoom-in-bottom")
+        value.setAttribute("data-aos-duration","1500")
+      })
       AOS.init();
     </script>
 </body>
