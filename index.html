@@ -15,6 +15,33 @@
 </head>
 
 <body>
+  <div class="alerting-add">
+    <div class="alert alert-success d-flex justify-content-center align-items-center" role="alert">
+        <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+            </svg>
+            <p class="m-0">product added in cart</p>
+        </div>
+      </div>
+</div>
+
+<div class="alerting-already">
+    <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
+        <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </symbol>
+            </svg>
+            <p class="m-0">product already in cart</p>
+        </div>
+      </div>
+</div>
   <div class="preloader">
     <div class="loader">
       <div class="inner one"></div>
@@ -25,26 +52,36 @@
   </div>
   <div class="container-fluid main p-0">
     <div class="d-flex justify-content-between align-items-center navbar-container p-3">
-      <div class="branding d-flex justify-content-start text-light align-items-center">
-        <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-            class="rs">RS</span>&nbsp;naturals</h1>
+      <div class="brandd">
+        <h1 class="text">
+          <span class="rs">RS</span>&nbsp;<span class="text-light">naturals</span>
+        </h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
+      </div>
+
+      <div class="navigation-links d-flex">
+          <li class="items"><a class="text-white" href="">HOME</a></li>
+          <li class="items"><a class="text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
+          <li class="items"><a class="text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
+          <li class="items"><a class="text-decoration-none" href="about.html">ABOUT US</a></li>
+          <li class="items"><a class="text-decoration-none" href="contact.html">CONTACT</a></li>
       </div>
 
       <!-- nav buttons -->
 
       <div class="right-side">
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">
+        <button class="btn navbar-button position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft">
           <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
+          <p class="items-count bg-success text-light position-absolute">0</p>
         </button>
 
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+        <button class="btn navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
           aria-controls="offcanvasRight">
           <i class="fa-solid fa-user" style="color: #ffae00;"></i>
         </button>
 
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
+        <button class="btn navbar-button open menu-visible" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
@@ -57,11 +94,12 @@
 
       <!-- button contents 1 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0" id="offcanvasRightLabel"><span
-              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
+              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span>
+            </h3>
+            <button type="button" class=" text-reset close " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
@@ -69,7 +107,7 @@
           </button>
         </div>
         
-        <div class="offcanvas-body">
+        <div class="offcanvas-body ">
           <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">HOME</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
@@ -80,7 +118,7 @@
       
       <!-- button contents 2 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h5 id="offcanvasRightLabel">ACCOUNT</h5>
           <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -97,26 +135,53 @@
 
       <!-- button contents 3 -->
       
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
-          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+          <h5 class="offcanvas-title" id="offcanvasLeftLabel">CART</h5>
+          <button type="button" class="text-reset text-reset1 " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
+          <div class="alerting-delete">
+            <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
+                <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                          </symbol>
+                    </svg>
+                    <p class="m-0">Removed from cart</p>
+                </div>
+              </div>
         </div>
-        <div class="offcanvas-body small">
-          No products in cart
         </div>
+        <div class="offcanvas-body realcart small position-relative">
+          <div class="userNameShowing text-center"></div>
+
+          <div class="emptyOrnot text-center mt-5">
+              <h5 class="text">Cart is Empty</h5>
+              <button class=" btn rounded-0 border text-success border-success continue_shopping my-3" onclick="continueshop()"><b>CONTINUE SHOP</b></button>
+
+          </div>
+        </div>
+        <div class="total">
+          <hr>
+          <div class="tot d-flex justify-content-between">
+              <p class="total-text ms-5">Total</p>
+              <p class="total-value me-5"><b>0</b></p>
+          </div>
+          <button class="btn-success border-0 rounded-2 w-75 ms-5 mb-4 py-2">CHECK OUT</button>
+      </div>
       </div>
 
     </div>
   </div>
   <div class="second-main d-flex flex-sm-column">
     <p class="contact-text text position-absolute write"></p>
-    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <!-- <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
           <stop id="stop1" stop-color="rgba(0, 8.55, 128.325, 0.49)" offset="0%"></stop>
@@ -127,7 +192,7 @@
         d="M31,-10.7C34.9,1.8,29.1,16.9,18.1,24.9C7.1,33,-9.1,33.9,-18.1,26.9C-27.2,19.9,-29,4.9,-24.8,-8.1C-20.5,-21.2,-10.3,-32.4,1.7,-32.9C13.6,-33.4,27.2,-23.3,31,-10.7Z"
         transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 1s;" stroke="url(#sw-gradient)">
       </path>
-    </svg>
+    </svg> -->
 
   </div>
   <div class="container-fluid pt-5 cards p-0">
@@ -136,135 +201,77 @@
     </div>
     <div class="row d-flex product_row m-0 p-0">
 
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card mt-3">
           <img src="assets/images/cumin.jpg" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="1" style="display:none;">
             <h6 class="card-title text-cumin">CUMIN POWDER</h6>
             <p class="card-text">Rs.50/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-cumin">BUY</a>
+            <a class="btn btn-success btn-cumin">ADD</a>
+            
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card mt-3">
           <img src="/assets/images/chilli.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="2" style="display:none;">
             <h6 class="card-title text-danger">CHILLI POWDER</h6>
             <p class="card-text">Rs.80/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-danger">BUY</a>
+            <a class="btn btn-success btn-danger">ADD</a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card mt-3">
           <img src="assets/images/garam.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="3" style="display:none;">
             <h6 class="card-title text-garam">GARAM MASALA</h6>
             <p class="card-text">Rs.80/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-garam">BUY</a>
+            <a class="btn btn-success btn-garam">ADD</a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card my-3">
           <img src="assets/images/coriander.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="4" style="display:none;">
             <h6 class="card-title text-success">CORIANDER POWDER</h6>
             <p class="card-text">Rs.40/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-success">BUY</a>
+            <a class="btn btn-success btn-success">ADD</a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card my-3">
           <img src="assets/images/onion.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="5" style="display:none;">
             <h6 class="card-title text-light">ONION POWDER</h6>
             <p class="card-text">Rs.100/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-light text-dark">BUY</a>
+            <a class="btn btn-success">ADD</a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
         <div class="card my-3">
           <img src="assets/images/cheese.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <input type="text" value="6" style="display:none;">
             <h6 class="card-title text-danger">CHEESE POWDER</h6>
             <p class="card-text">Rs.120/-</p>
             <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-danger">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos="new-animate" data-aos-duration="2000">
-        <div class="card mt-3">
-          <img src="assets/images/cumin.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-cumin">CUMIN POWDER</h6>
-            <p class="card-text">Rs.50/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-cumin">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-        <div class="card mt-3">
-          <img src="assets/images/chilli.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-danger">CHILLI POWDER</h6>
-            <p class="card-text">Rs.80/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-danger">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-        <div class="card mt-3">
-          <img src="assets/images/garam.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-garam">GARAM MASALA</h6>
-            <p class="card-text">Rs.80/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-garam">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-        <div class="card my-3">
-          <img src="assets/images/coriander.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-success">CORIANDER POWDER</h6>
-            <p class="card-text">Rs.40/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-success">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-        <div class="card my-3">
-          <img src="assets/images/onion.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-light">ONION POWDER</h6>
-            <p class="card-text">Rs.100/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-light text-dark">BUY</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-        <div class="card my-3">
-          <img src="assets/images/cheese.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h6 class="card-title text-danger">CHEESE POWDER</h6>
-            <p class="card-text">Rs.120/-</p>
-            <p class="text-secondary">100gms</p>
-            <a href="#" class="btn btn-success btn-danger">BUY</a>
+            <a class="btn btn-success btn-danger">ADD</a>
           </div>
         </div>
       </div>
@@ -283,22 +290,27 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
-          <div class="whytobox">
-            <img src="assets/images/why/pngegg (8).png" alt="">
+          <div class="whytobox ">
+            <div class="sowing position-relative">
+              <img src="assets/images/why/pngegg (8).png" alt="">
+            </div>
             <h2 class="text-light text-uppercase">Wide Variety</h2>
             <h5 class="text-light mt-4">"We believe in the power of nature's goodness. Our spices are free from artificial additives, preservatives, and fillers. With RS Naturals, you can savor the pure, unadulterated taste of each spice, enhancing your dishes naturally."</h5>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
           <div class="whytobox">
-            <img src="assets/images/why/full pack cropped.png" alt="">
+            <div class="packingImages d-flex">
+              <img src="assets/images/why/left pack.png" alt="" class="pack1">
+               <img src="assets/images/why/right pack.png" alt="" class="pack2">
+            </div>
             <h2 class="text-light text-uppercase">Packaged with Care</h2>
             <h5 class="text-light mt-4">"We understand the importance of preserving the freshness and potency of our spices. Our packaging is designed to seal in the aroma and flavor, ensuring that every time."</h5>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
           <div class="whytobox">
-            <img src="assets/images/why/pngegg (7).png" alt="" class="delieveryboy">
+            <img src="assets/images/why/pngegg (7).png" alt="" class="worker">
             <h2 class="text-light pt-2">WHOLE SALE AVAILABLE</h2>
             <h5 class="text-light mt-4">" we are delighted to offer free delivery as part of our commitment to providing you with a seamless and satisfying shopping experience."</h5>
           </div>
@@ -379,10 +391,6 @@
             </div>
             <div class="col-md-4 mb-md-0 mb-4">
               <h2 class="footer-heading text-light">Download App</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-1 d-block"><span class=""></span>android</a></li>
-                <li><a href="#" class="py-1 d-block"><span class=""></span>iOS</a></li>
-              </ul>
               <div class="appimage  ">
                 <img src="assets/images/pngegg (3).png" alt="" class="img1">
                 <img src="assets/images/pngegg (5).png" alt="" class="img2">
@@ -402,9 +410,7 @@
                 <img src="assets/images/youtube.png" alt="">
               </div>
               <p class="copyright text-light">
-                Copyright &copy;<script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved by <a href="" target="_blank">rsnaturals@spices.com</a>
+                Copyright &copy;2023 All rights reserved by <a href="" target="_blank">rsnaturals@spices.com</a>
               </p>
             </div>
           </div>
@@ -416,13 +422,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+  
   <script>
     var whytobox=document.querySelectorAll(".whytobox");
-      whytobox.forEach((value) => {
-        value.setAttribute("data-aos","zoom-in-bottom")
-        value.setAttribute("data-aos-duration","1500")
-      })
+    whytobox.forEach((value) => {
+      value.setAttribute("data-aos","zoom-in-bottom")
+      value.setAttribute("data-aos-duration","1000")
+    })
+    var addtocart=document.querySelectorAll('.card a');
+    addtocart.forEach((value) => {
+      value.setAttribute("onclick","addtocart(this)")
+    })
+    // var card_body=document.querySelectorAll('.card-body');
+    // card_body.forEach((value) => {
+    //   var cre=document.createElement('input');
+    //   cre.setAttribute("value","1");
+    //   cre.classList.add("input");
+    //   cre.style.display='none';
+    //   value.append(cre);
+    // })
     AOS.init();
   </script>
 </body>

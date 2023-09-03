@@ -1,8 +1,41 @@
 .second-main{
-    background-image: url("../images/pratiksha-mohanty-V0xp-dTS3z0-unsplash (1).jpg");
-    background-position: center;
+    background-image: url("../images/products/bg.png");
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 40vh;
+    height: 100vh;
+    text-shadow: 0 0 5px black;
+}
+.categories{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(18, 18, 18);
+}
+.categories .cat{
+    /* background-color: rgb(18, 18, 18); */
+    /* background-image: url("../images/products/text-background-png-5.png"); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 20px;
+    margin: 0px;
+    color: white;
+    white-space: nowrap;
+    border: 0.02px solid white;
+     padding: 3px 55px;
+    
+}
+
+@media screen and (max-width:720px) {
+    .second-main{
+        height: 65vh;
+    }
+    
 }

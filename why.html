@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/css/why.css">
 </head>
 <body>
+ 
+
+
   <div class="preloader">
     <div class="loader">
       <div class="inner one"></div>
@@ -24,26 +27,30 @@
   </div>
   <div class="container-fluid main p-0">
     <div class="d-flex justify-content-between align-items-center navbar-container p-3">
-      <div class="branding d-flex justify-content-start text-light align-items-center">
-        <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-            class="rs">RS</span>&nbsp;naturals</h1>
+      <div class="brandd">
+        <h1 class="text">
+          <span class="rs">RS</span>&nbsp;<span class="text-light">naturals</span>
+        </h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
+      </div>
+
+      <div class="navigation-links d-flex">
+          <li class="items"><a class="text-decoration-none" href="index.html">HOME</a></li>
+          <li class="items"><a class="text-white" href="">WHY CHOOSE US?</a></li>
+          <li class="items"><a class="text-decoration-none" href="product.html">SHOP</a></li>
+          <li class="items"><a class="text-decoration-none" href="about.html">ABOUT US</a></li>
+          <li class="items"><a class="text-decoration-none" href="contact.html">CONTACT</a></li>
       </div>
 
       <!-- nav buttons -->
 
       <div class="right-side">
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">
-          <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
-        </button>
-        
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+        <button class="btn navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
           aria-controls="offcanvasRight">
           <i class="fa-solid fa-user" style="color: #ffae00;"></i>
         </button>
 
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
+        <button class="btn navbar-button open menu-visible" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
@@ -56,13 +63,12 @@
 
       <!-- button contents 1 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">
-            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-            </h5>
-            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0" id="offcanvasRightLabel"><span
+              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span>
+            </h3>
+            <button type="button" class=" text-reset close " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
@@ -70,9 +76,9 @@
           </button>
         </div>
         
-        <div class="offcanvas-body">
-          <li class="list-items"><a class="dropdown-item text-decoration-none " href="index.html">HOME</a></li>
-          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">WHY CHOOSE US?</a></li>
+        <div class="offcanvas-body ">
+          <li class="list-items"><a class="dropdown-item text-decoration-none"  href="index.html">HOME</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active"  href="">WHY CHOOSE US?</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="product.html">OUR PRODUCTS</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
@@ -81,7 +87,7 @@
       
       <!-- button contents 2 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h5 id="offcanvasRightLabel">ACCOUNT</h5>
           <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -95,47 +101,32 @@
          Dinesh kumar
         </div>
       </div>
-
-      <!-- button contents 3 -->
-      
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
-          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
-            <div class="menu1 d-flex justify-content-center align-items-center">
-              <div class="xmark1"></div>
-              <div class="xmark2"></div>
-            </div>
-          </button>
-        </div>
-        <div class="offcanvas-body small">
-          No products in cart
         </div>
       </div>
-
-    </div>
-  </div>
     <div class="second-main">
-
+      <p class="contact-text text position-absolute">WHY US ?</p>
     </div>
     <div class="container-fluid cards p-0 m-0">
     
     
     <!-- content -->
-    <div class="animate py-5">
+    <div class="animate pb-5">
       <div class="whole-whybanner">
-        <div class="row p-0 m-0">
-          <div class="col-12 col-md-6 col-lg-6 ">
+        <div class="row p-0 m-0 py-5">
+          <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center ">
             <div class="bannerimage">
-              <img src="assets/images/why/swisspac-mockup.png" alt="" class="w-100 bannerimage2 position-relative">
-              <img src="assets/images/why/5-2-special-offer-png-pic.png" alt="" class="bannerimage1">
+              <h4 class="text-white p-4 text-center">
+                we recognize that when you're eagerly awaiting the perfect spices to elevate your culinary creations, time is of the essence. That's why we are dedicated to providing you with swift and efficient delivery services that bring the world of flavors right to your doorstep. 
+              </h4>
+              <img src="assets/images/why/healthy-bowl-organic-quinoa-with-spices-generated-by-ai.jpg" alt="" class="w-100 ">
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="bannercontent">
-                <h4 class="text-white p-4 ">
-                  we recognize that when you're eagerly awaiting the perfect spices to elevate your culinary creations, time is of the essence. That's why we are dedicated to providing you with swift and efficient delivery services that bring the world of flavors right to your doorstep. 
-                </h4>
+          <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+            <div class="bannerimage">
+              <img src="assets/images/condiments-powder-table.jpg" alt="" class="w-100">
+              <h4 class="text-white p-4 text-center ">
+                we recognize that when you're eagerly awaiting the perfect spices to elevate your culinary creations, time is of the essence. That's why we are dedicated to providing you with swift and efficient delivery services that bring the world of flavors right to your doorstep. 
+              </h4>
             </div>
           </div>
         </div>
@@ -270,8 +261,8 @@
     <script>
       var whytobox=document.querySelectorAll(".whytobox");
       whytobox.forEach((value) => {
-        value.setAttribute("data-aos","zoom-in-bottom")
-        value.setAttribute("data-aos-duration","1500")
+        value.setAttribute("data-aos","zoom-in-bottom");
+        value.setAttribute("data-aos-duration","1500");
       })
       AOS.init();
     </script>

@@ -1,12 +1,20 @@
 .second-main{
-    background-image: none;
-    background-color: black ;
+    background-image: url("../images/condiments-powder-table.jpg");
+    /* background-color: black ; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 8vh;
+    height: 60vh;
 }
+.whole-whybanner .bannerimage{
+    background-color: rgba(0, 87, 154, 0.112);
+    margin: 20px 0;
+}
+.whole-whybanner .bannerimage h4{
+    margin: 20px 0;
+}
+
 
 /* .delieveryboy{
     transform: translateX(-400px);

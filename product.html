@@ -14,6 +14,33 @@
     <link rel="stylesheet" href="assets/css/product.css">
 </head>
 <body>
+  <div class="alerting-add">
+    <div class="alert alert-success d-flex justify-content-center align-items-center" role="alert">
+        <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+            </svg>
+            <p class="m-0">product added in cart</p>
+        </div>
+      </div>
+</div>
+
+<div class="alerting-already">
+    <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
+        <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </symbol>
+            </svg>
+            <p class="m-0">product already in cart</p>
+        </div>
+      </div>
+</div>
   <div class="preloader">
     <div class="loader">
       <div class="inner one"></div>
@@ -24,26 +51,36 @@
   </div>
   <div class="container-fluid main p-0">
     <div class="d-flex justify-content-between align-items-center navbar-container p-3">
-      <div class="branding d-flex justify-content-start text-light align-items-center">
-        <h1 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-            class="rs">RS</span>&nbsp;naturals</h1>
+      <div class="brandd">
+        <h1 class="text">
+          <span class="rs">RS</span>&nbsp;<span class="text-light">naturals</span>
+        </h1>
         <!-- <img src="/assets/images/icon-logo.png" alt="" class="brand-icon"> -->
+      </div>
+
+      <div class="navigation-links d-flex">
+          <li class="items"><a class="text-decoration-none" href="index.html">HOME</a></li>
+          <li class="items"><a class="text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
+          <li class="items"><a class="text-white" href="">SHOP</a></li>
+          <li class="items"><a class="text-decoration-none" href="about.html">ABOUT US</a></li>
+          <li class="items"><a class="text-decoration-none" href="contact.html">CONTACT</a></li>
       </div>
 
       <!-- nav buttons -->
 
       <div class="right-side">
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">
+        <button class="btn navbar-button position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft">
           <i class="fa-brands fa-opencart" style="color: #0cb800;"></i>
+          <p class="items-count bg-success text-light position-absolute">0</p>
         </button>
-        
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+
+        <button class="btn navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
           aria-controls="offcanvasRight">
           <i class="fa-solid fa-user" style="color: #ffae00;"></i>
         </button>
 
-        <button class="btn navbar-button open" type="button" data-bs-toggle="offcanvas"
+        <button class="btn navbar-button open menu-visible" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">
           <div class="menu">
             <div class="first"></div>
@@ -56,13 +93,12 @@
 
       <!-- button contents 1 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">
-            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0"><span
-              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span></h3>
-            </h5>
-            <button type="button" class=" text-reset close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <h3 class="text brand d-flex justify-content-center text-light align-items-center m-0" id="offcanvasRightLabel"><span
+              class="rs">RS</span>&nbsp;<span class="brand2">naturals</span>
+            </h3>
+            <button type="button" class=" text-reset close " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
@@ -70,10 +106,10 @@
           </button>
         </div>
         
-        <div class="offcanvas-body">
+        <div class="offcanvas-body ">
           <li class="list-items"><a class="dropdown-item text-decoration-none " href="index.html">HOME</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="why.html">WHY CHOOSE US?</a></li>
-          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">OUR PRODUCTS</a></li>
+          <li class="list-items"><a class="dropdown-item text-decoration-none active" href="">SHOP</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="about.html">ABOUT US</a></li>
           <li class="list-items"><a class="dropdown-item text-decoration-none" href="contact.html">CONTACT</a></li>
         </div>
@@ -81,7 +117,7 @@
       
       <!-- button contents 2 -->
       
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
           <h5 id="offcanvasRightLabel">ACCOUNT</h5>
           <button type="button" class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -98,45 +134,352 @@
 
       <!-- button contents 3 -->
       
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">CART</h5>
-          <button type="button" class="text-reset " data-bs-dismiss="offcanvas" aria-label="Close">
+          <h5 class="offcanvas-title" id="offcanvasLeftLabel">CART</h5>
+          <button type="button" class="text-reset text-reset1 " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
+          <div class="alerting-delete">
+            <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
+                <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                          </symbol>
+                    </svg>
+                    <p class="m-0">Removed from cart</p>
+                </div>
+              </div>
         </div>
-        <div class="offcanvas-body small">
-          No products in cart
         </div>
+        <div class="offcanvas-body realcart small position-relative">
+          <div class="userNameShowing text-center"></div>
+
+          <div class="emptyOrnot text-center mt-5">
+              <h5 class="text">Cart is Empty</h5>
+              <button class=" btn rounded-0 border text-success border-success continue_shopping my-3" onclick="continueshop()"><b>CONTINUE SHOP</b></button>
+
+          </div>
+        </div>
+        <div class="total">
+          <hr>
+          <div class="tot d-flex justify-content-between">
+              <p class="total-text ms-5">Total</p>
+              <p class="total-value me-5"><b>0</b></p>
+          </div>
+          <button class="btn-success border-0 rounded-2 w-75 ms-5 mb-4 py-2">CHECK OUT</button>
+      </div>
       </div>
 
     </div>
   </div>
     <div class="second-main">
-      <p class="contact-text text position-absolute">OUR PRODUCTS</p>
+      <p class="contact-text text position-absolute">LET'S SHOP</p>
+      <div class="categories w-100"> 
+        <div class="cat"><a href="" class="text-decoration-none text-white">BUY 1 GET 1 </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">HOT</a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="#pickles" class="text-decoration-none text-white">PICKLE </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="#masala" class="text-decoration-none text-white">MASALA </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">OIL</a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">SPICES </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">SWEETS </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">SPECIAL OFFERS </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+        <div class="cat"><a href="" class="text-decoration-none text-white">COMBO </a><i class="fa-solid fa-angle-right" style="color: #ffffff; padding:0 0 0 1rem;"></i></div>
+      </div>
     </div>
-    <div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Action
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
+    
+    <div class="container-fluid pt-5 cards p-0">
+      
+      <div class="our-products my-3">
+        <h1 class="text2 text-center text-white p-3" id="masala">MASALA</h1>
+        <p class="poda"><span><b></b></span></p>
+      </div>
+      <div class="row d-flex product_row m-0 p-0">
   
-    <footer class="footer">
-			<div class="container-fluid">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="assets/images/cumin.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="1" style="display:none;">
+              <h6 class="card-title text-cumin">CUMIN POWDER</h6>
+              <p class="card-text">Rs.50/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-cumin">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="/assets/images/chilli.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title text-danger">CHILLI POWDER</h6>
+              <input type="text" value="2" style="display:none;">
+              <p class="card-text">Rs.80/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-danger">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="assets/images/garam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="3" style="display:none;">
+              <h6 class="card-title text-garam">GARAM MASALA</h6>
+              <p class="card-text">Rs.80/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-garam">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/coriander.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="4" style="display:none;">
+              <h6 class="card-title text-success">CORIANDER POWDER</h6>
+              <p class="card-text">Rs.40/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-success">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/onion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="5" style="display:none;">
+              <h6 class="card-title text-light">ONION POWDER</h6>
+              <p class="card-text">Rs.100/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/cheese.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="6" style="display:none;">
+              <h6 class="card-title text-danger">CHEESE POWDER</h6>
+              <p class="card-text">Rs.120/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-danger">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos="new-animate" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="assets/images/cumin.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="7" style="display:none;">
+              <h6 class="card-title text-cumin">CUMIN POWDER</h6>
+              <p class="card-text">Rs.50/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-cumin">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="assets/images/chilli.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="8" style="display:none;">
+              <h6 class="card-title text-danger">CHILLI POWDER</h6>
+              <p class="card-text">Rs.80/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-danger">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card mt-3">
+            <img src="assets/images/garam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="9" style="display:none;">
+              <h6 class="card-title text-garam">GARAM MASALA</h6>
+              <p class="card-text">Rs.80/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-garam">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/coriander.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="10" style="display:none;">
+              <h6 class="card-title text-success">CORIANDER POWDER</h6>
+              <p class="card-text">Rs.40/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-success">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/onion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="11" style="display:none;">
+              <h6 class="card-title text-light">ONION POWDER</h6>
+              <p class="card-text">Rs.100/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success">ADD</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card my-3">
+            <img src="assets/images/cheese.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <input type="text" value="12" style="display:none;">
+              <h6 class="card-title text-danger">CHEESE POWDER</h6>
+              <p class="card-text">Rs.120/-</p>
+              <p class="text-secondary">100gms</p>
+              <a class="btn btn-success btn-danger">ADD</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- pickles -->
+  <div class="container-fluid pt-5 cards p-0">
+    <div class="our-products my-3">
+      <h1 class="text2 text-center text-white p-3" id="pickles">PICKLES</h1>
+    </div>
+    <div class="row row2 d-flex product_row m-0 p-0">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Image.png" class="card-img-top1" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="13" style="display:none;">
+            <h6 class="card-title text-cumin">Garlic Pickle</h6>
+            <p class="card-text">Rs.50/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-cumin">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Pic.png" class="card-img-top2" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="14" style="display:none;">
+            <h6 class="card-title text-danger">Tomato and garlic Pickle</h6>
+            <p class="card-text">Rs.80/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-danger">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Image.png" class="card-img-top1" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="15" style="display:none;">
+            <h6 class="card-title text-cumin">Garlic Pickle</h6>
+            <p class="card-text">Rs.50/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-cumin">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Pic.png" class="card-img-top2" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="16" style="display:none;">
+            <h6 class="card-title text-danger">Tomato and garlic Pickle</h6>
+            <p class="card-text">Rs.80/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-danger">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Image.png" class="card-img-top1" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="17" style="display:none;">
+            <h6 class="card-title text-cumin">Garlic Pickle</h6>
+            <p class="card-text">Rs.50/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-cumin">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Pic.png" class="card-img-top2" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="18" style="display:none;">
+            <h6 class="card-title text-danger">Tomato and garlic Pickle</h6>
+            <p class="card-text">Rs.80/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-danger">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Image.png" class="card-img-top1" alt="...">
+          </div>
+          <div class="card-body">
+          <input type="text" value="19" style="display:none;">
+          <h6 class="card-title text-cumin">Garlic Pickle</h6>
+          <p class="card-text">Rs.50/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-cumin">ADD</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card mt-3">
+          <div class="pickleimage">
+            <img src="assets/images/products/Hot-Pickle-PNG-Pic.png" class="card-img-top2" alt="...">
+          </div>
+          <div class="card-body">
+            <input type="text" value="21" style="display:none;">
+            <h6 class="card-title text-danger">Tomato and garlic Pickle</h6>
+            <p class="card-text">Rs.130/-</p>
+            <p class="text-secondary">100gms</p>
+            <a class="btn btn-success btn-danger">ADD</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+  </div>
+
+<!-- footer  -->
+<footer class="footer">
+  <div class="container-fluid">
 				<div class="row align-items-center align-items-stretch mb-5">
 					<div class="col-md-4 py-4 py-md-5 aside-stretch d-flex align-items-center">
-						<div class="w-100">
-							<span class="subheading text-light">Subscribe to our</span>
+            <div class="w-100">
+              <span class="subheading text-light">Subscribe to our</span>
 							<h3 class="heading-section text-light">Newsletter</h3>
 						</div>
 					</div>
@@ -198,6 +541,10 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     
     <script>
+      var addtocart=document.querySelectorAll('.card a');
+    addtocart.forEach((value) => {
+      value.setAttribute("onclick","addtocart(this)")
+    })
       AOS.init();
     </script>
 </body>

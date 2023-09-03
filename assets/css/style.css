@@ -10,6 +10,9 @@
     /* outline: solid #f00 1px !important; */
    
 }
+.items-count{
+    font-family: 'Ubuntu', sans-serif;
+}
 body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
@@ -94,19 +97,20 @@ body{
     height: 60%;
 }
 .offcanvas-header{
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(29,36,43);
     color: rgb(255, 255, 255);
     font-family: 'Tilt Prism', cursive !important;
 }
-.offcanvas-end{
-    background-color: rgb(244, 244, 244);
-    color: rgb(18, 18, 18) !important;
-    font-family: 'Tilt Prism', cursive;
+.offcanvas-end,.offcanvas-start{
+   background-image: url("../images/headerbg.jpg");
+   background-size: cover;
+    color: rgb(43, 43, 43) !important;
+    /* font-family: 'Tilt Prism', cursive; */
 }
 
 .offcanvas-body{
     z-index: 10;
-    font-family: 'Barriecito', sans-serif;
+    font-family: 'Barriecito', cursive;
     font-weight: bold;
     font-size: 23px;
 }
@@ -201,8 +205,18 @@ body{
     height: inherit;
     height:inherit;
 }
+.second-main::before{
+    background-color: #101931d3;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
 .second-main{
-    background-image: url('../images/tamanna-rumee-dqVPEGkuR_U-unsplash.jpg');
+    background-image: url('../images/about/counter.jpg');
     color: white;
     height: 100vh;
     width: 100%;
@@ -242,7 +256,7 @@ body{
     transition: color 2s;
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    width: 200px;
+    /* width: 200px; */
 }
 .card img{
     width: 100%;
@@ -250,6 +264,19 @@ body{
 .card-img-top{
     z-index: 10;
     width: 100%;
+}
+.row .card{
+    background-color: #011c27b7;
+}
+.row .card .btn{
+    width: 100% !important;
+    background-color: transparent ;
+    border: 1px solid white;
+    border-radius: 0 ;
+}
+.row2 .card .btn{
+    width: 100% !important;
+    background-color: transparent ;
 }
 .text2{
     font-family: 'Barriecito', cursive !important;
@@ -397,6 +424,18 @@ body{
     border-radius: 10px;
     background: #737373;
 }
+.categories::-webkit-scrollbar {
+    height: max-content;
+}
+
+.categories::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: transparent;
+}
 .submit{
     width: 50px;
     height: 50px;
@@ -405,7 +444,6 @@ body{
     height: 50px;
 }
 .contact-text{
-    /* font-style: ; */
   top: 50%;
   white-space: nowrap;
   left: 50%;
@@ -414,8 +452,9 @@ body{
   transform: translate(-50%,-50%);
 }
 .list-items a.active{
-    color:green;
-    background-color: rgba(128, 128, 128, 0.32);
+    color:rgb(124, 0, 0);
+    text-decoration: underline !important;
+    text-underline-offset: 6px;
 }
 .subscribe-form input{
     color: white !important;
@@ -467,12 +506,11 @@ main .whytochooseus{
     justify-content: center;
     box-shadow: 0 0 25px black;
     background-color: rgba(0, 149, 255, 0.089);
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-left: 5px solid white;
-    /* border-radius: 50px; */
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 10px;
     margin-top: 20px;
+    transition: transform 100ms;
 
 }
 .whytobox img{
@@ -481,11 +519,12 @@ main .whytochooseus{
 .bannerimage2{
     width: 100%;
     padding: 0px;
-}.bannerimage1{
+}
+.bannerimage1{
     overflow: hidden;
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 50%;
+    left: 50%;
     width: 100px;
     height: 100px;
 }
@@ -498,6 +537,181 @@ main .whytochooseus{
     padding:0;
     text-align: center;
 }
+
+.row2 .card{
+    background-color: #011c27b7;
+    border-radius: 10px;
+}
+.pickleimage{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.pickleimage .card-img-top1{
+   
+    height: 180px;
+    width: 100px;
+}
+.pickleimage .card-img-top2{
+    height: 180px;
+    width: 150px;
+}
+.items-count{
+    top: -10px;
+    border-radius: 50%;
+    min-width: 25px;
+    min-height: 25px;
+    right: -3px;
+}
+.product{
+    width: 100%;
+    height: 100px;
+}
+.products img{
+
+    width: 150px;
+    height: 100px;
+}
+.add{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+.minus{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+.input{
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+.alerting-add{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+.emptyOrnot.emptyed{
+    display: block;
+}
+.emptyOrnot.notemptyed{
+    display: none;
+}
+.total.emptyed{
+    display: none;
+}
+.total.notemptyed{
+    display: block;
+}
+.alerting-delete{
+    display: none;
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.alerting-already{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+.total-value::before{
+    content: '₹ ';
+}
+.total-value::after{
+    content: ' /-';
+}
+.individual-price::before{
+    content: '₹ ';
+    padding-right: 3px;
+}
+.empty{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu-visible{
+    display: none;
+}
+.navigation-links{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navigation-links li{
+    padding: 0 5px;
+}
+.items a{
+    color: rgb(172, 172, 172);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.press-animation{
+    /* animation: press-animiation 500ms ease-in-out; */
+    transform: scale(0.9);
+    transition: transform 100ms;
+}
+.press-animation-reject{
+    animation: press-animiation 500ms ease-in-out;
+    transform: scale(0.9);
+    transition: transform 200ms;
+}
+
+@keyframes press-animiation {
+    0%{
+        transform: translateX(10px);
+    } 
+    25%{
+    background-color: red;
+    transform: translateX(-10px);
+}
+50%{
+    background-color: red;
+    transform: translateX(5px);
+}
+75%{
+    transform: translateX(-5px);
+}
+100%{
+       transform: translateX(0px);
+   } 
+}
+
+
+
+
+
+@media screen and (max-width:970px) {
+    .menu-visible{
+        display: block;
+    }
+    .navigation-links{
+        display: none !important;
+    }
+}
 @media screen and (max-width:720px) {
     .contact-text{
         top: 55%;
@@ -507,5 +721,7 @@ main .whytochooseus{
         width: 110%;
         height: 100%;
     }
+    
+    
     
 }
