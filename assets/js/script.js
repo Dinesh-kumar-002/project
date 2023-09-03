@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 if(document.querySelector('.write')){
     var typing = new Typed(".write", {
         strings: [" ",`"\Welcome to <br><span class="rs">RS</span>&nbsp;naturals\"`],
-        typeSpeed: 30,
+        typeSpeed: 60,
         backSpeed: 100,
         // loop: true,
         showCursor: false
@@ -250,8 +250,6 @@ function addtocartpage(btn,p_image, p_name, p_price, p_id) {
     }, 1000);
     return;
   } else {
-    btn.style.backgroundColor="green";
-    btn.textContent="ADDED";
     btn.classList.add("press-animation")
   setTimeout(() => {
     btn.classList.remove("press-animation")

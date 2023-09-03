@@ -475,7 +475,6 @@ body{
 .col-md-4 .img2{
     width: 180px;
     height: 100px;
-    padding-right: 20px;  
 }
 .subscribe:focus{
     border-bottom: 2px solid white;
@@ -485,7 +484,7 @@ body{
 .social-icons img{
     width: 30px;
     height: 30px;
-    margin: 0 2px;
+    margin: 0 5px;
 }
 .some-text{
     font-size: 23px;
@@ -673,6 +672,7 @@ main .whytochooseus{
     /* animation: press-animiation 500ms ease-in-out; */
     transform: scale(0.9);
     transition: transform 100ms;
+    background-color: green !important;
 }
 .press-animation-reject{
     animation: press-animiation 500ms ease-in-out;
