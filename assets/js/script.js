@@ -229,8 +229,9 @@ function addtocart(btn) {
   var product_name = parent.querySelector(".card-title").innerText;
   var id_value = parent.querySelector("input").value;
   var product_price = parseFloat(
-    parent.querySelector(".card-text").textContent.substring(1)
+    parent.querySelector(".card-text").textContent.match(/\d+/)
   );
+  console.log(btn,product_image, product_name, product_price, id_value);
   addtocartpage(btn,product_image, product_name, product_price, id_value);
 }
 
@@ -264,8 +265,8 @@ function addtocartpage(btn,p_image, p_name, p_price, p_id) {
     item_count.innerHTML = p_array.length;
     realcart.innerHTML += `
     <div class="products d-flex py-2">
-        <div class="product">
-              <img src="${p_image}" alt="">
+        <div class="product ">
+              <img src="${p_image}" alt="" class="cart-image rounded-3">
         </div>
             <div class="nameandquantity d-flex flex-column justify-content-around ms-2">
                 <h6 class="text product-name">${p_name}</h6>
@@ -277,15 +278,17 @@ function addtocartpage(btn,p_image, p_name, p_price, p_id) {
                           <button class="btn-secondary add" onclick="add(this)">+</button>
                     </div>
             </div>
-            <div class="individual-price d-flex justify-content-end align-items-end ps-4">
+            <div class="individual-price d-flex justify-content-end align-items-end px-2">
                    ${p_price}
             </div>
-      </div>
+            </div>
+            
   `;
     totals();
   }
 }
 function totals() {
+  var dummy_amount=document.querySelectorAll('.total-value-plus-delievery');
   var total = 0;
   var totaling = document.querySelectorAll(".individual-price");
   var displaying_total = document.querySelector(".total-value");
@@ -293,18 +296,26 @@ function totals() {
     total += parseInt(value.textContent);
   });
   displaying_total.textContent = total;
+  dummy_amount.forEach((value) => {
+    value.textContent=`₹ ${total+50}`
+  })
 }
 empty();
 function empty(){
   var hide_checkout=document.querySelector('.total');
   var emptyOrnot=document.querySelector('.emptyOrnot');
+  var realcart_showing=document.querySelector('.realcart');
   if(p_array.length<1){
+    realcart_showing.classList.add("realcart-showing")
+    realcart_showing.classList.remove("realcart-showing")
     hide_checkout.classList.add("emptyed")
     hide_checkout.classList.remove("notemptyed")
     emptyOrnot.classList.add("emptyed");
     emptyOrnot.classList.remove("notemptyed");
   }
   else{
+    realcart_showing.classList.remove("realcart-showing")
+    realcart_showing.classList.add("realcart-showing")
     hide_checkout.classList.remove("emptyed")
     hide_checkout.classList.add("notemptyed")
     emptyOrnot.classList.remove("emptyed");

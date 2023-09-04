@@ -97,7 +97,7 @@ body{
     height: 60%;
 }
 .offcanvas-header{
-    background-color: rgb(202, 132, 99);
+    background-color: rgb(15, 15, 15);
     color: rgb(255, 255, 255);
     font-family: 'Tilt Prism', cursive !important;
 }
@@ -505,7 +505,6 @@ main .whytochooseus{
     justify-content: center;
     box-shadow: 0 0 25px black;
     background-color: rgba(0, 149, 255, 0.089);
-    border-right: 1px solid white;
     border-bottom: 1px solid white;
     padding: 10px;
     margin-top: 20px;
@@ -566,24 +565,34 @@ main .whytochooseus{
     right: -3px;
 }
 .product{
-    width: 100%;
+    width: 45%;
     height: 100px;
+}
+.products{
+
+    border-bottom: 0.5px solid rgb(207, 207, 207);
+   
 }
 .products img{
-
-    width: 150px;
+    object-fit:contain;
+    width: 100%;
     height: 100px;
+
 }
 .add{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 40px;
     height: 40px;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 0;
 }
 .minus{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     font-size: 30px;
     width: 40px;
     height: 40px;
@@ -698,6 +707,57 @@ main .whytochooseus{
 100%{
        transform: translateX(0px);
    } 
+}
+.realcart-showing{
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+.total{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    
+}
+.total .tot:nth-child(1){
+    padding-top: 5px;
+    border-top: 2px dashed grey;
+}
+.tot-last{
+    margin: 0;
+    width: 100%;
+    position: relative;
+    border-top: 2px dashed grey;
+    border-bottom: 2px dashed grey;
+}
+.realcart-showing::before{
+    content:"";
+    position: absolute;
+    top: -52px;
+    background-image: url("../images/bill top.png");
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+.tot-last::after{
+    content:"";
+    position: absolute;
+    bottom: -126px;
+    background-image: url("../images/bill bottom.png");
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    /* background-repeat: no-repeat; */
+}
+.total button{
+    background-color: green;
+    color: white;
 }
 
 

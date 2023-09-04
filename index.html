@@ -137,13 +137,13 @@
       
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLeftLabel">CART</h5>
           <button type="button" class="text-reset text-reset1 " data-bs-dismiss="offcanvas" aria-label="Close">
             <div class="menu1 d-flex justify-content-center align-items-center">
               <div class="xmark1"></div>
               <div class="xmark2"></div>
             </div>
           </button>
+          <h5 class="offcanvas-title" id="offcanvasLeftLabel">MY CART</h5>
           <div class="alerting-delete">
             <div class="alert alert-primary d-flex justify-content-center align-items-center" role="alert">
                 <svg class="bi me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#info-fill"/></svg>
@@ -158,30 +158,44 @@
               </div>
         </div>
         </div>
-        <div class="offcanvas-body realcart small position-relative">
+        <div class="offcanvas-body small position-relative">
           <div class="userNameShowing text-center"></div>
+          <div class="realcart">
+            <h3 class="text brand d-flex justify-content-center align-items-center pt-2" id="offcanvasRightLabel"><span
+              class="rs">RS</span>&nbsp;<span class="brand2 text-dark">naturals</span>
+            </h3>
+            <hr style="width: 100%; height: 2px;padding: 0;margin: 0;">
+          </div>
 
           <div class="emptyOrnot text-center mt-5">
               <h5 class="text">Cart is Empty</h5>
               <button class=" btn rounded-0 border text-success border-success continue_shopping my-3" onclick="continueshop()"><b>CONTINUE SHOP</b></button>
-
           </div>
-        </div>
-        <div class="total">
-          <hr>
-          <div class="tot d-flex justify-content-between">
-              <p class="total-text ms-5">Total</p>
-              <p class="total-value me-5"><b>0</b></p>
+          <div class="total pt-5">
+          <div class="tot d-flex justify-content-between align-items-center">
+            <p class="total-text ms-3 fs-5">Sub-Total</p>
+            <p class="total-value-plus-delievery text-danger me-3 fs-5"><b></b></p>
           </div>
-          <button class="btn-success border-0 rounded-2 w-75 ms-5 mb-4 py-2">CHECK OUT</button>
+          <div class="tot d-flex justify-content-between align-items-center border-bottom-2">
+            <p class="total-text ms-3 fs-5">Free Delivery</p>
+            <p class="text-success me-3 fs-5"><b>₹ -50</b></p>
+          </div>
+          
+          <div class="tot tot-last d-flex justify-content-between align-items-center">
+              <p class="total-text text-success fs-4 ms-3">Payable Amount</p>
+              <p class="total-value text-success fs-4 me-3"><b>0</b></p>
+          </div>
+          <button class="btn-success border-0 rounded-2 w-75 ms-5 my-4 py-2">CHECK OUT</button>
       </div>
+        </div>
+        
       </div>
 
     </div>
   </div>
   <div class="second-main d-flex flex-sm-column">
     <p class="contact-text text position-absolute write"></p>
-    <!-- <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
           <stop id="stop1" stop-color="rgba(0, 8.55, 128.325, 0.49)" offset="0%"></stop>
@@ -192,7 +206,7 @@
         d="M31,-10.7C34.9,1.8,29.1,16.9,18.1,24.9C7.1,33,-9.1,33.9,-18.1,26.9C-27.2,19.9,-29,4.9,-24.8,-8.1C-20.5,-21.2,-10.3,-32.4,1.7,-32.9C13.6,-33.4,27.2,-23.3,31,-10.7Z"
         transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 1s;" stroke="url(#sw-gradient)">
       </path>
-    </svg> -->
+    </svg>
 
   </div>
   <div class="container-fluid pt-5 cards p-0">

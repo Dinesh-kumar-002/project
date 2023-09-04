@@ -8,11 +8,16 @@
     height: 60vh;
 }
 .whole-whybanner .bannerimage{
-    background-color: rgba(0, 87, 154, 0.112);
     margin: 20px 0;
 }
 .whole-whybanner .bannerimage h4{
+    background-color: rgba(0, 87, 154, 0.112);
     margin: 20px 0;
+    border-radius: 10px;
+    border: 0.3px solid white;
+}
+.bannerimage img{
+    border-radius: 20px;
 }
 
 
