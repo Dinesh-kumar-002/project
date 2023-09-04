@@ -57,8 +57,8 @@ var tl4 = gsap.timeline({
 var tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".imagepin2",
-        start: "top 90%",
-        end: 'top 0%',
+        start: "top 100%",
+        end: 'top 70%',
         scrub:1
     },
 });
@@ -380,23 +380,6 @@ function heart(heart_paren) {
 
 function continueshop(){
     document.querySelector('.text-reset1').click();
-}
-
-
-//mail smtp
-function sendEmail() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "sender@email_address.com",
-    Password: "Enter your password",
-    To: 'receiver@email_address.com',
-    From: "sender@email_address.com",
-    Subject: "Sending Email using javascript",
-    Body: "Well that was easy!!",
-  })
-    .then(function (message) {
-      alert("mail sent successfully")
-    });
 }
 
 

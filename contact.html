@@ -17,10 +17,16 @@
 
 <body>
   <div class="preloader">
-    <div class="loader">
-      <div class="inner one"></div>
-      <div class="inner two"></div>
-      <div class="inner three"></div>
+    <div class="loading">
+      <div class="loading-text">
+        <span class="loading-text-words">L</span>
+        <span class="loading-text-words">O</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">D</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">G</span>
+      </div>
     </div>
     <div class="please text-white">please wait...</div>
   </div>
@@ -190,13 +196,13 @@
       </div>
 
       <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
-        <form action="#" class=" w-md-75 pb-5 pb-lg-0">
+        <form action="#" class=" w-md-75 pb-5 pb-lg-0" id="mail-form">
           <div class="form mg-lg-0 h-100 mt-5 mt-lg-0">
             <h4 class="text-light">send message</h4>
             <input type="text" placeholder="Full Name" id="name"> 
             <input type="text" placeholder="Email address" id="email">
             <textarea type="text" placeholder="Write Message" id="message"></textarea>
-            <button type="submit">send</button>
+            <button onclick="sendEmail()">send</button>
           </div>
         </form>
       </div>
@@ -279,6 +285,26 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
+    //mail smtp
+    function sendEmail() {
+  var user_name=document.querySelector("#name").value;
+  var user_email=document.querySelector("#email").value;
+  var user_message=document.querySelector("#message").value;
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "dineshkumar123smtp@gmail.com",
+    Password: "2A14FAC5D39EB754C21BA8D92E5F480252E5",
+    From: "dineshkumar123smtp@gmail.com",
+    To: "dineshkumar123smtp@gmail.com",
+    Subject: `${user_name}`,
+    Body: `${user_message}`,
+  })
+    .then(function (message) {
+      console.log(message);
+      alert("Mail sent")
+    });
+    
+}
     AOS.init();
   </script>
 </body>
