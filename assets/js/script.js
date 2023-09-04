@@ -13,7 +13,7 @@ gsap.from('.brandd', {
     y: '-100px',
     ease: 'elastic'
 })
-gsap.from('.navbar-button', {
+gsap.from('.navbar-button,.navigation-links', {
     duration: 3,
     y: '-100px',
     ease: 'elastic'
@@ -269,7 +269,7 @@ function addtocartpage(btn,p_image, p_name, p_price, p_id) {
               <img src="${p_image}" alt="" class="cart-image rounded-3">
         </div>
             <div class="nameandquantity d-flex flex-column justify-content-around ms-2">
-                <h6 class="text product-name">${p_name}</h6>
+                <h6 class="text product-name text-dark">${p_name}</h6>
                 <p class="text product-id" style="display:none;">${p_id}</p>
                 <h6 class="text price-id" style="display:none;">${p_price}</h6>
                     <div class="quantity d-flex align-items-end" >
@@ -278,7 +278,7 @@ function addtocartpage(btn,p_image, p_name, p_price, p_id) {
                           <button class="btn-secondary add" onclick="add(this)">+</button>
                     </div>
             </div>
-            <div class="individual-price d-flex justify-content-end align-items-end px-2">
+            <div class="individual-price d-flex justify-content-end align-items-end px-2 text-dark">
                    ${p_price}
             </div>
             </div>
@@ -382,5 +382,61 @@ function continueshop(){
     document.querySelector('.text-reset1').click();
 }
 
+submit();
 
+function submit(){
+    var display_none=document.querySelector('.account-login');
+    var userNameShowing=document.querySelector('.userNameShowing');
+    if(localStorage.getItem("username")){
+        userNameShowing.innerHTML=`<h4 class="mb-5"><b>hi ${localStorage.getItem("username")}!</b></h4>`;
+        setTimeout(()=>{
+        display_none.innerHTML=
+        `<div class="user_details d-flex flex-column align-items-center justify-content-center">
+        <div class="detail1">
+        <i class="fa-solid fa-user p-5" style="color: #a9a9a9;background-color: white;border-radius: 50%;font-size:30px;"></i>
+        </div>
+        <h5 class="detail2">${localStorage.getItem("username")}</h5>
+        <h5 class="detail3">${localStorage.getItem("useremail")}</h5>
+        <button class="btn-warning border-0 rounded-pill px-3 py-2 logout-btn" onclick="logout()"><b>LOGOUT</b></button>
+        </div>`;
+    },500)
+}
+else{
+    display_none.innerHTML=
+    `
+    <form onsubmit="submitted()">
+    <div class="account-input d-flex flex-column justify-content-center align-items-center">
+    <input type="text" class="user_name" placeholder="User Name" id="uname" required>
+    <input type="email" class="user_email" placeholder="Email" id="email" required>
+    <input type="password" class="user_password" placeholder="Password" id="password" required>
+    <button class="btn btn-success"  >LOGIN</button>
+    </div>
+    </form>
+    
+    `;
+    
+} 
+}
+function submitted(){
+      
+    var email=document.getElementById("email");
+    var password=document.getElementById("password");
+    var uname=document.getElementById("uname");
+    var userName=uname.value;
+    var userEmail=email.value;
+    var userPassword=password.value;
+    localStorage.setItem("username",userName);
+    localStorage.setItem("useremail",userEmail);
+    localStorage.setItem("userpassword",userPassword);
+    submit();
+    }
+ 
+function logout(){
+    const data_array=["username","useremail","userpassword"];
+    data_array.forEach((item)=>{
+        localStorage.removeItem(item);
+    })
+    window.location.reload();
+    submit();
+}
   

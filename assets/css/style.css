@@ -10,6 +10,10 @@
     /* outline: solid #f00 1px !important; */
    
 }
+.small{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
 .items-count{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -80,6 +84,14 @@ body{
     color: rgb(9, 244, 0);
     font-family: 'Tilt Prism', cursive;
     
+}
+.brand-address{
+    border-bottom: 3px dashed rgb(143, 143, 143);
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align: center;
+    color: rgb(101, 99, 99);
+    font-family: 'Ubuntu', sans-serif;
 }
 .brand2{
     font-family: 'Barriecito', cursive;
@@ -322,74 +334,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-
 }
-.loader {
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%);
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    perspective: 800px;
-  }
-  
-  .inner {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;  
-  }
-  
-  .inner.one {
-    left: 0%;
-    top: 0%;
-    animation: rotate-one 1s linear infinite;
-    border-bottom: 3px solid #EFEFFA;
-  }
-  
-  .inner.two {
-    right: 0%;
-    top: 0%;
-    animation: rotate-two 1s linear infinite;
-    border-right: 3px solid #EFEFFA;
-  }
-  
-  .inner.three {
-    right: 0%;
-    bottom: 0%;
-    animation: rotate-three 1s linear infinite;
-    border-top: 3px solid #EFEFFA;
-  }
-  
-  @keyframes rotate-one {
-    0% {
-      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
-  }
-  
-  @keyframes rotate-two {
-    0% {
-      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-    }
-  }
-  
-  @keyframes rotate-three {
-    0% {
-      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-    }
-  }
+.loading-text .loading-text-words{
+    font-size: 20px;
+}
+
   .text2{
       background-color: rgb(18, 18, 18);
     }
@@ -404,11 +353,6 @@ body{
     backdrop-filter: blur(10px);
 }
 .footer{
-    /* background-image: url("../images/footer vertical.jpg");
-    background-size: cover;
-    background-position: center 80%;
-    background-repeat: no-repeat; */
-    /* background-color: rgb(18, 18, 18); */
     background-color: rgb(0, 3, 41);
 }
 .product_row{
@@ -745,7 +689,7 @@ main .whytochooseus{
 .realcart-showing::before{
     content:"";
     position: absolute;
-    top: -52px;
+    top: -48px;
     background-image: url("../images/bill top.png");
     width: 100%;
     height: 50px;
@@ -769,6 +713,26 @@ main .whytochooseus{
     background-color: green;
     color: white;
 }
+
+account-input{
+    width: 300px;
+    margin: 10px 0;
+}
+.account-input input,.account-input button{
+    outline: 0;
+    border: 0;
+}
+.user_email, .user_name,.user_password{
+    width: 100%;
+    margin: 10px 0;
+    padding: 9px ;
+}
+
+.detail2,.detail3,.logout-btn{
+    margin-top: 10px;
+}
+
+
 
 
 
