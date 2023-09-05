@@ -270,22 +270,19 @@ function logout(){
 function handleIntersection(entries, observer) {
     entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-            // Load the image by setting its src attribute
             const lazyImage = entry.target;
             lazyImage.src = lazyImage.getAttribute('data-src');
-            observer.unobserve(lazyImage); // Stop observing after loading
+            observer.unobserve(lazyImage);
         }
     });
 }
 
-// Create an Intersection Observer instance
 const observer = new IntersectionObserver(handleIntersection, {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px', // No margin around the viewport
-    threshold: 0.5 // 50% of the target element must be visible
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
 });
 
-// Observe all elements with the "lazy" class
 const lazyImages = document.querySelectorAll('img');
 lazyImages.forEach(function (lazyImage) {
     observer.observe(lazyImage);
