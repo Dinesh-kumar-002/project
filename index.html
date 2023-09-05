@@ -223,7 +223,7 @@
             <h6 class="card-title text-cumin">CUMIN POWDER</h6>
             <p class="card-text">Rs.50/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success btn-cumin">ADD</a>
+            <a class="btn btn-success btn-cumin" onclick="addtocart(this)">ADD</a>
             
           </div>
         </div>
@@ -236,7 +236,7 @@
             <h6 class="card-title text-danger">CHILLI POWDER</h6>
             <p class="card-text">Rs.80/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success btn-danger">ADD</a>
+            <a class="btn btn-success btn-danger" onclick="addtocart(this)">ADD</a>
           </div>
         </div>
       </div>
@@ -249,7 +249,7 @@
             <h6 class="card-title text-garam">GARAM MASALA</h6>
             <p class="card-text">Rs.80/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success btn-garam">ADD</a>
+            <a class="btn btn-success btn-garam" onclick="addtocart(this)">ADD</a>
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
             <h6 class="card-title text-success">CORIANDER POWDER</h6>
             <p class="card-text">Rs.40/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success btn-success">ADD</a>
+            <a class="btn btn-success btn-success" onclick="addtocart(this)">ADD</a>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@
             <h6 class="card-title text-light">ONION POWDER</h6>
             <p class="card-text">Rs.100/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success">ADD</a>
+            <a class="btn btn-success" onclick="addtocart(this)">ADD</a>
           </div>
         </div>
       </div>
@@ -285,7 +285,7 @@
             <h6 class="card-title text-danger">CHEESE POWDER</h6>
             <p class="card-text">Rs.120/-</p>
             <p class="text-secondary">100gms</p>
-            <a class="btn btn-success btn-danger">ADD</a>
+            <a class="btn btn-success btn-danger" onclick="addtocart(this)">ADD</a>
           </div>
         </div>
       </div>
@@ -437,26 +437,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
+  <script src="assets/js/addtocart.js"></script>
   <script>
+    
     var whytobox=document.querySelectorAll(".whytobox");
     whytobox.forEach((value) => {
       value.setAttribute("data-aos","zoom-in-bottom")
       value.setAttribute("data-aos-duration","1000")
     })
-    var addtocart=document.querySelectorAll('.card a');
-    addtocart.forEach((value) => {
-      value.setAttribute("onclick","addtocart(this)")
-    })
-    // var card_body=document.querySelectorAll('.card-body');
-    // card_body.forEach((value) => {
-    //   var cre=document.createElement('input');
-    //   cre.setAttribute("value","1");
-    //   cre.classList.add("input");
-    //   cre.style.display='none';
-    //   value.append(cre);
-    // })
     AOS.init();
+   
   </script>
 </body>
 

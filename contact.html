@@ -103,7 +103,9 @@
           </button>
         </div>
         <div class="offcanvas-body">
-         Dinesh kumar
+          <div class="account-login d-flex flex-column justify-content-center align-items-center">
+                                
+          </div>
         </div>
       </div>
 
@@ -286,25 +288,25 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     //mail smtp
-    function sendEmail() {
-  var user_name=document.querySelector("#name").value;
-  var user_email=document.querySelector("#email").value;
-  var user_message=document.querySelector("#message").value;
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "dineshkumar123smtp@gmail.com",
-    Password: "2A14FAC5D39EB754C21BA8D92E5F480252E5",
-    From: "dineshkumar123smtp@gmail.com",
-    To: "dineshkumar123smtp@gmail.com",
-    Subject: `${user_name}`,
-    Body: `${user_message}`,
-  })
-    .then(function (message) {
-      console.log(message);
-      alert("Mail sent")
-    });
+//     function sendEmail() {
+//   var user_name=document.querySelector("#name").value;
+//   var user_email=document.querySelector("#email").value;
+//   var user_message=document.querySelector("#message").value;
+//   Email.send({
+//     Host: "smtp.gmail.com",
+//     Username: "dineshkumar123smtp@gmail.com",
+//     Password: "2A14FAC5D39EB754C21BA8D92E5F480252E5",
+//     From: "dineshkumar123smtp@gmail.com",
+//     To: "dineshkumar123smtp@gmail.com",
+//     Subject: `${user_name}`,
+//     Body: `${user_message}`,
+//   })
+//     .then(function (message) {
+//       console.log(message);
+//       alert("Mail sent")
+//     });
     
-}
+// }
     AOS.init();
   </script>
 </body>
