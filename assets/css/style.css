@@ -371,10 +371,10 @@ body{
 
 .product_row::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: #737373;
+    background: #7a7a7a;
 }
 .categories::-webkit-scrollbar {
-    height: max-content;
+    height: 0;
 }
 
 .categories::-webkit-scrollbar-track {
@@ -382,7 +382,6 @@ body{
 }
 
 .categories::-webkit-scrollbar-thumb {
-    border-radius: 10px;
     background: transparent;
 }
 .submit{
