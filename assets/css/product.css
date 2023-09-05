@@ -1,6 +1,6 @@
 .second-main{
-    background-image: url("../images/products/bg.png");
-    background-position: top center;
+    background-image: url("../images/why/products.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,7 +29,7 @@
     color: white;
     white-space: nowrap;
     border: 0.02px solid white;
-     padding: 3px 55px;
+    padding: 3px 55px;
     
 }
 
