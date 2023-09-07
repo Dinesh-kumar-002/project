@@ -34,7 +34,7 @@ var tl2 = gsap.timeline({
         scrub:1,
         start: 'top bottom ',
         end:'center 70%',
-        duration:1
+        duration:1.5
     },
 });
 var tl3 = gsap.timeline({
@@ -65,8 +65,8 @@ var tl5 = gsap.timeline({
 var tl6 = gsap.timeline({
     scrollTrigger: {
         trigger: ".pack1",
-        start: 'top bottom ',
-        end:'center 70%',
+        start: 'bottom bottom ',
+        end:'center 60%',
         scrub:1
     },
 });
@@ -74,8 +74,8 @@ var tl7 = gsap.timeline({
     scrollTrigger: {
         trigger: ".pack2",
         scrub:1,
-        start: 'center bottom ',
-        end:'center 70%'
+        start: 'bottom bottom ',
+        end:'center 60%'
     },
 });
 tl4.fromTo('.imagepin',{
@@ -96,7 +96,7 @@ tl2.fromTo('.worker',{
     x: '20px',
     opacity: '1',
     ease: 'linear',
-    duration: '0.5'
+    duration: '1'
 });
 tl5.fromTo('.imagepin2', {
     y: '100px',
